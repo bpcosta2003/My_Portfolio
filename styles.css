@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
   background-image: url(img/img6.jpg);
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .container {
