@@ -73,6 +73,25 @@ body {
 
 /*/PORTIFÓLIO ESTILOS*/
 
+.bemvindo {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: white;
+  text-align: center;
+}
+
+.explicação {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: white;
+  text-align: center;
+  padding: 50px 0 100px;
+}
+
 .itens-portifolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -110,6 +129,11 @@ body {
 }
 
 .img-text .subtitulo {
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
   transition: 1s;
   font-weight: 400;
   font-family: "Lato", sans-serif;
@@ -148,6 +172,12 @@ body {
 }
 
 .conteudo-sobre-mim h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: white;
+  text-align: center;
   padding: 10px;
   position: absolute;
   justify-content: center;
@@ -158,8 +188,13 @@ body {
 }
 
 .conteudo-sobre-mim p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: white;
+  text-align: center;
   padding: 10px;
-  font-weight: 600;
+  font-weight: normal;
   position: absolute;
   justify-content: center;
   padding: 50px;
