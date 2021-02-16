@@ -1,9 +1,10 @@
 body {
-  background-image: url(img/img6.jpg);
+  background-image: url(img/img4.jpg);
+  background-repeat: no-repeat;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   font-size: 25px;
   letter-spacing: 4px;
