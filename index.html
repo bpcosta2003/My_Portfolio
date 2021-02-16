@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>BRUNO COSTA - Minha jornada.</title>
+  </head>
+
+  <body>
+    <!--/container-->
+
+    <div class="container">
+      <!--/barra de navegação-->
+
+      <div class="nav">
+        <!--/lado esquerdo da barra de navegação-->
+
+        <div class="lado-esquerdo">
+          <div class="nav-link active-nav-link">
+            <a href="index.html">HOME</a>
+          </div>
+
+          <div class="nav-link">
+            <a href="sobre.html">SOBRE</a>
+          </div>
+
+          <div class="nav-link">
+            <a href="redes_sociais.html">REDES SOCIAIS</a>
+          </div>
+        </div>
+
+        <!--/lado direito da barra de navegação-->
+        <div class="lado-direito">
+          <div class="nav-nome">
+            <div>BRUNO COSTA</div>
+          </div>
+        </div>
+      </div>
+
+      <!--/Conteúdo da página-->
+      <div class="conteudo">
+        <div class="itens-portifolio">
+          <!--/IMG 1-->
+          <div class="item-portifolio">
+            <div
+              class="background-img-port"
+              style="background-image: url(img/img2.jpg)"
+              ;
+            ></div>
+
+            <div class="img-text">
+              <div class="logo">
+                <img src="img/logo/browser-logo.png" alt="" />
+              </div>
+
+              <div class="subtitulo">
+                Em 2018 comecei a me interessar mais por assuntos tecnológicos,
+                e quis aprender como desenvolver designs.
+              </div>
+            </div>
+          </div>
+          <!--/IMG 2-->
+          <div class="item-portifolio">
+            <div
+              class="background-img-port"
+              style="background-image: url(img/img3.jpg)"
+              ;
+            ></div>
+
+            <div class="img-text">
+              <div class="logo">
+                <img src="img/logo/adobe-logo.png" alt="" />
+              </div>
+
+              <div class="subtitulo">
+                Por isso, me matriculei na SAGA, uma escola de design gráfico.
+              </div>
+            </div>
+          </div>
+          <!--/IMG 3-->
+          <div class="item-portifolio">
+            <div
+              class="background-img-port"
+              style="background-image: url(img/img5.jpg)"
+              ;
+            ></div>
+
+            <div class="img-text">
+              <div class="logo">
+                <img src="img/logo/database-logo.png" alt="" />
+              </div>
+
+              <div class="subtitulo">
+                Aprendi muitas coisas legais lá, mas não era o que eu realmente
+                achava que iria me sustentar no futuro.
+              </div>
+            </div>
+          </div>
+          <!--/IMG 4-->
+          <div class="item-portifolio">
+            <div
+              class="background-img-port"
+              style="background-image: url(img/img1.jpg)"
+              ;
+            ></div>
+
+            <div class="img-text">
+              <div class="logo">
+                <img src="img/logo/code-logo.png" alt="" />
+              </div>
+
+              <div class="subtitulo">
+                Por isso, sai da SAGA em 2019 e fiquei parado 1 ano pensando no
+                que fazer. Até que em 2020 me surgiu a oportunidade de aprender
+                programação.
+              </div>
+            </div>
+          </div>
+          <!--/IMG 5-->
+          <div class="item-portifolio">
+            <div
+              class="background-img-port"
+              style="background-image: url(img/img6.jpg)"
+              ;
+            ></div>
+
+            <div class="img-text">
+              <div class="logo">
+                <img src="img/logo/calendar-logo.png" alt="" />
+              </div>
+
+              <div class="subtitulo">
+                Como já tinha amigos que tinham contato com essa tecnologia me
+                interessei ainda mais, e por isso me matriculei em um curso de
+                programação da MASTERGEEKS.
+              </div>
+            </div>
+          </div>
+          <!--/IMG 6-->
+          <div class="item-portifolio">
+            <div
+              class="background-img-port"
+              style="background-image: url(img/img4.jpg)"
+              ;
+            ></div>
+
+            <div class="img-text">
+              <div class="logo">
+                <img src="img/logo/checkmark-logo.png" alt="" />
+              </div>
+
+              <div class="subtitulo">
+                E assim começou minha jornada como programador! Quando terminei
+                o colégio quis fazer um tecnólogo como Analista de Sistemas na
+                FIAP, e estou lá até hoje.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--/Colocar o javascript-->
+  <script>
+    const portitens = document.querySelectorAll(".item-portifolio");
+    portitens.forEach((portitens) => {
+      portitens.addEventListener("mouseover", () => {
+        portitens.childNodes[1].classList.add("img-darken");
+      });
+
+      portitens.addEventListener("mouseout", () => {
+        portitens.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
+</html>
