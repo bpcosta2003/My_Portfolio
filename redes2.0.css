@@ -1,6 +1,7 @@
 body {
   background-image: url(img/img4.jpg);
-  background-repeat: no-repeat;
+  background-repeat: space;
+  background-size: auto;
 }
 
 h1 {
@@ -72,4 +73,8 @@ h1 {
 }
 .socialmedia a:hover .fa-linkedin {
   color: #153883;
+}
+
+.socialmedia a:hover .fa-artstation {
+  color: #19b0ec;
 }
