@@ -29,6 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 38px;
+  flex-wrap: wrap;
 }
 
 .lado-esquerdo {
