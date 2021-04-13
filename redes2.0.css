@@ -78,3 +78,49 @@ h1 {
 .socialmedia a:hover .fa-artstation {
   color: #19b0ec;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.lado-esquerdo {
+  display: flex;
+}
+
+.nav > .lado-esquerdo > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+
+.nav-link {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  text-decoration: none;
+}
+
+.nav-nome {
+  color: white;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.active-nav-link a {
+  color: black !important;
+}

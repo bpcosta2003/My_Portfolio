@@ -2,13 +2,13 @@
 body {
   margin: 0px;
   overflow-x: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   background-image: url(img/img4.jpg);
   background-repeat: space;
   background-size: auto;
 }
 
-.container {
+.caixa {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -17,7 +17,7 @@ body {
 }
 
 @media (min-width: 1170px) {
-  .container {
+  .caixa {
     max-width: 1170px;
     display: grid;
     grid-template-columns: 1fr;
@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   padding: 38px;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .lado-esquerdo {
@@ -62,6 +63,10 @@ body {
   color: black;
 }
 
+.estilos a:hover {
+  color: black;
+}
+
 .active-nav-link {
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
@@ -79,6 +84,7 @@ body {
   letter-spacing: 4px;
   color: white;
   text-align: center;
+  padding: 2rem;
 }
 
 .explicação {
