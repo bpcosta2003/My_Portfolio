@@ -7,7 +7,7 @@
 body {
   margin: 0px;
   overflow-x: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   background-image: url(img/img4.jpg);
   background-repeat: unset;
   background-size: unset;
@@ -84,7 +84,7 @@ body {
 }
 
 .top {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 4px;
@@ -94,7 +94,7 @@ body {
 }
 
 .expl {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -105,7 +105,7 @@ body {
 }
 
 .python {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 4px;
@@ -115,7 +115,7 @@ body {
 }
 
 .projetos_graficos figcaption {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 1.2rem;
   letter-spacing: 4px;
@@ -125,7 +125,7 @@ body {
 }
 
 .projetos_programação figcaption {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 1.2rem;
   letter-spacing: 4px;

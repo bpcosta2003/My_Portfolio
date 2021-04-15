@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: "Lora", serif;
   background-image: url(img/img4.jpg);
   background-repeat: space;
   background-size: auto;
@@ -24,61 +24,10 @@ body {
   }
 }
 
-/*/ESTILOS DA BARRA DE NAVEGAÇÃO*/
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 38px;
-  flex-wrap: wrap;
-  text-decoration: none;
-}
-
-.lado-esquerdo {
-  display: flex;
-}
-
-.nav > .lado-esquerdo > div {
-  margin-right: 20px;
-  font-size: 0.9em;
-}
-
-.nav-link {
-  height: 22px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
-  text-decoration: none;
-}
-
-.nav-nome {
-  color: white;
-}
-
-.nav-link a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.nav-link a:hover {
-  color: black;
-}
-
-.estilos a:hover {
-  color: black;
-}
-
-.active-nav-link {
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
-}
-
-.active-nav-link a {
-  color: black !important;
-}
-
 /*/PORTIFÓLIO ESTILOS*/
 
 .bemvindo {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 4px;
@@ -88,7 +37,7 @@ body {
 }
 
 .explicação {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 1.2rem;
   letter-spacing: 4px;
@@ -141,13 +90,13 @@ body {
   text-align: center;
   transition: 1s;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   color: transparent;
 }
 
 .img-text:hover .subtitulo {
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   color: rgb(255, 255, 255);
 }
 
@@ -177,7 +126,7 @@ body {
 }
 
 .conteudo-sobre-mim h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 4px;
@@ -193,7 +142,7 @@ body {
 }
 
 .conteudo-sobre-mim p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
   font-size: 1.2rem;
   letter-spacing: 2px;
   color: white;
@@ -227,4 +176,12 @@ body {
   background-size: cover;
   background-position: center;
   flex-wrap: wrap;
+}
+
+.redes {
+  padding: 2rem;
+}
+
+label {
+  padding: 0.8rem;
 }
