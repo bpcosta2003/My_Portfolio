@@ -146,3 +146,42 @@ body {
 .socialmedia a:hover {
   color: #3b5998;
 }
+
+.navbar .container-fluid .navbar-collapse .navbar-nav > li > a:hover {
+  color: black;
+}
+
+#carouselCodes .carousel-item img {
+  height: 40.5rem;
+  justify-content: center;
+}
+#carouselCodes .carousel-inner img {
+  height: 40.5rem;
+  justify-content: center;
+}
+
+#carouselWeb .carousel-item img {
+  width: 40.5rem;
+  justify-content: center;
+}
+#carouselWeb .carousel-inner img {
+  width: 40.5rem;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #carouselCodes .carousel-item img {
+    height: 20.5rem;
+  }
+  #carouselCodes .carousel-inner img {
+    height: 20.5rem;
+  }
+  #carouselWeb .carousel-item img {
+    height: 20.5rem;
+    width: 20.5rem;
+  }
+  #carouselWeb .carousel-inner img {
+    height: 20.5rem;
+    width: 20.5rem;
+  }
+}

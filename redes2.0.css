@@ -124,3 +124,7 @@ h1 {
 .active-nav-link a {
   color: black !important;
 }
+
+.navbar .container-fluid .navbar-collapse .navbar-nav > li > a:hover {
+  color: black;
+}

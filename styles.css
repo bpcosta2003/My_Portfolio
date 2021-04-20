@@ -189,3 +189,7 @@ label {
 .botao {
   width: 100%;
 }
+
+.navbar .container-fluid .navbar-collapse .navbar-nav > li > a:hover {
+  color: black;
+}
