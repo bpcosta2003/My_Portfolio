@@ -185,3 +185,7 @@ body {
 label {
   padding: 0.8rem;
 }
+
+.botao {
+  width: 100%;
+}

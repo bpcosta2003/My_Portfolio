@@ -100,73 +100,8 @@ body {
   letter-spacing: 2px;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin: 20px;
-}
-
-.python {
-  font-family: "Lora", serif;
-  font-weight: normal;
-  font-size: 2rem;
-  letter-spacing: 4px;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
-
-.projetos_graficos figcaption {
-  font-family: "Lora", serif;
-  font-weight: normal;
-  font-size: 1.2rem;
-  letter-spacing: 4px;
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
-
-.projetos_programação figcaption {
-  font-family: "Lora", serif;
-  font-weight: normal;
-  font-size: 1.2rem;
-  letter-spacing: 4px;
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
-
-.projetos_graficos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-
-figure {
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.projetos_graficos figure img {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-}
-
-.py img {
-  width: 50px;
-}
-
-.projetos_programação {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-.projetos_programação figure {
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.projetos_programação figure img {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 /*/botão*/

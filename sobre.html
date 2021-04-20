@@ -112,4 +112,16 @@
       </div>
     </div>
   </body>
+  <script>
+    const portitens = document.querySelectorAll(".sobre-mim-page");
+    portitens.forEach((portitens) => {
+      portitens.addEventListener("mouseover", () => {
+        portitens.childNodes[1].classList.add("img-darken");
+      });
+
+      portitens.addEventListener("mouseout", () => {
+        portitens.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
 </html>
