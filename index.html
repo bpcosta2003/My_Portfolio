@@ -4,212 +4,262 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="sortcut icon" href="/img/logo/logo_BP.svg" type="image/x-icon" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
-      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="myPort.css" />
+    <script src="animacoes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <title>BRUNO COSTA - Minha jornada.</title>
+    <title>BRUNO COSTA - My Portifolio</title>
   </head>
 
   <body>
     <!--/container-->
-
-    <div class="caixa">
-      <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 2rem">
+    <div class="box">
+      <!-- /navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://my-portifolio-bc.surge.sh"
-            >Bruno Costa</a
-          >
+          <h2 class="navbar-brand">Bruno Costa</h2>
+
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
+            class="collapse navbar-collapse justify-content-lg-end"
+            id="navbarNavAltMarkup"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >HOME</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobre.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="redes_sociais.html">SOCIAL MEDIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="meus_projetos.html">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contato.html"
-                  >CONTACT</a
-                >
-              </li>
-            </ul>
+            <div class="navbar-nav">
+              <a class="nav-link" href="#home">HOME</a>
+              <a class="nav-link" href="#projects">PROJECTS</a>
+              <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#skills">SKILLS</a>
+              <a class="nav-link" href="mailto:bruno.p.costa.2003@example.com"
+                >CONTACT</a
+              >
+            </div>
           </div>
         </div>
       </nav>
+      <!--/Conteúdo do Home-->
+      <div class="section" id="home">
+        <div class="content" id="contentHome">
+          <div class="left">
+            <img src="img/perfil.jpg" alt="" />
+          </div>
 
-      <!--/Conteúdo da página-->
-      <div class="conteudo justify-content-center">
-        <h1 class="bemvindo">
-          Bem vindo à minha página, esta é a minha jornada !
-        </h1>
-        <h2 class="explicação">Clique no ícone para ver o texto</h2>
-        <div class="itens-portifolio">
-          <div class="item-portifolio">
-            <div
-              class="background-img-port"
-              style="background-image: url(img/img2.jpg)"
-              ;
-            ></div>
+          <div class="right">
+            <div class="about">
+              <h1>Hello</h1>
+              <h4>I'm Bruno Costa,</h4>
+              <p>Web development, Web Design & Python programmer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Conteúdo do Projects-->
 
-            <div class="img-text">
-              <div class="logo">
-                <img src="img/logo/browser-logo.png" alt="" />
-              </div>
-
-              <div class="subtitulo">
-                Em 2018 comecei a me interessar mais por assuntos tecnológicos,
-                e quis aprender como desenvolver designs.
+      <div class="section" id="projects">
+        <div class="content content-projects">
+          <div id="contentProjects">
+            <div class="boxProjects">
+              <h2 class="title">DESIGN PROJECTS</h2>
+              <h4>
+                Made in Illustrator and Photoshop. You can see poligonal arts,
+                type arts, minimalist arts and 3D arts.
+              </h4>
+              <a onclick="explorarD()" class="link">PREVIEW </a>
+              <div class="iconesProject">
+                <a
+                  class="icon"
+                  target="_blank"
+                  href="https://www.artstation.com/brunodpc2003"
+                  ><i class="fab fa-artstation"></i
+                ></a>
               </div>
             </div>
           </div>
-          <!--/IMG 2-->
-          <div class="item-portifolio">
-            <div
-              class="background-img-port"
-              style="background-image: url(img/img3.jpg)"
-              ;
-            ></div>
-
-            <div class="img-text">
-              <div class="logo">
-                <img src="img/logo/adobe-logo.png" alt="" />
-              </div>
-
-              <div class="subtitulo">
-                Por isso, me matriculei na SAGA, uma escola de design gráfico.
-              </div>
-            </div>
-          </div>
-          <!--/IMG 3-->
-          <div class="item-portifolio">
-            <div
-              class="background-img-port"
-              style="background-image: url(img/img5.jpg)"
-              ;
-            ></div>
-
-            <div class="img-text">
-              <div class="logo">
-                <img src="img/logo/database-logo.png" alt="" />
-              </div>
-
-              <div class="subtitulo">
-                Aprendi muitas coisas legais lá, mas não era o que eu realmente
-                achava que iria me sustentar no futuro.
+          <div id="contentProjectsPython">
+            <div class="boxProjectsPython">
+              <h2 class="title">PYTHON PROJECTS</h2>
+              <h4>
+                Made with python. You can see codes of files manipulation,
+                dictionaries and more.
+              </h4>
+              <a onclick="explorarP()" class="link">PREVIEW</a>
+              <div class="iconesProject">
+                <a
+                  class="icon"
+                  target="_blank"
+                  href="https://github.com/bpcosta2003"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
-          <!--/IMG 4-->
-          <div class="item-portifolio">
-            <div
-              class="background-img-port"
-              style="background-image: url(img/img1.jpg)"
-              ;
-            ></div>
-
-            <div class="img-text">
-              <div class="logo">
-                <img src="img/logo/code-logo.png" alt="" />
-              </div>
-
-              <div class="subtitulo">
-                Por isso, sai da SAGA em 2019 e fiquei parado 1 ano pensando no
-                que fazer. Até que em 2020 me surgiu a oportunidade de aprender
-                programação.
+          <div id="contentProjectsWeb">
+            <div class="boxProjectsWeb">
+              <h2 class="title">WEB PROJECTS</h2>
+              <h4>
+                Made with HTML, CSS and JAVASCRIPT. You can see a shopping list,
+                top trumps and more.
+              </h4>
+              <a onclick="explorarW()" class="link">PREVIEW </a>
+              <div class="iconesProject">
+                <a
+                  class="icon"
+                  target="_blank"
+                  href="https://github.com/bpcosta2003"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
-          <!--/IMG 5-->
-          <div class="item-portifolio">
-            <div
-              class="background-img-port"
-              style="background-image: url(img/img6.jpg)"
-              ;
-            ></div>
+        </div>
+      </div>
+      <!--/Conteúdo do About-->
+      <div class="section" id="about">
+        <div class="content" id="contentAbout">
+          <div class="imgperfil">
+            <img src="img/perfil.jpg" alt="" />
+          </div>
+          <div class="contentAboutme">
+            <div id="aboutMePart" class="about">
+              <h1 id="aboutTop">Hi !</h1>
+              <p id="aboutContent">
+                I have recently started learning Web development, but I always
+                like to be learning and I use this knowledge for my life. I can
+                consider myself a prudent person, knowing the risks before
+                defining my actions. In areas such as logistics or production,
+                for example, I can work with methodologies that allow me to
+                anticipate scenarios and avoid problems, which will probably be
+                comfortable for me. In these areas I can highlight myself by my
+                organization characteristics, process vision and cooperative
+                profile. For me the mistake is a learning, I work a lot to know
+                how to deal with them.
+              </p>
+              <button class="moreAbout" onclick="moreAbout()">
+                SEE MY JOURNEY <i class="bi bi-caret-right-fill"></i>
+              </button>
+            </div>
 
-            <div class="img-text">
-              <div class="logo">
-                <img src="img/logo/calendar-logo.png" alt="" />
+            <div class="socialMedia">
+              <a
+                href="https://www.facebook.com/profile.php?id=100013404461306"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/BrunodpC" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/brunodepaula2003/?hl=pt-br"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/bruno-costa-3238161b5/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Conteúdo do Skills-->
+      <div class="section" id="skills">
+        <div class="content skillsContent">
+          <div class="card">
+            <div class="circle">
+              <div class="contentInner">
+                <span>Programming</span>
               </div>
-
-              <div class="subtitulo">
-                Como já tinha amigos que tinham contato com essa tecnologia me
-                interessei ainda mais, e por isso me matriculei em um curso de
-                programação da MASTERGEEKS.
+              <div class="hover">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <div class="skillsPercentage">
+                <h4 class="python">Python</h4>
+                <h4 class="java">Java</h4>
+                <h4 class="typeScript">TypeScript</h4>
               </div>
             </div>
           </div>
-          <!--/IMG 6-->
-          <div class="item-portifolio">
-            <div
-              class="background-img-port"
-              style="background-image: url(img/img4.jpg)"
-              ;
-            ></div>
-
-            <div class="img-text">
-              <div class="logo">
-                <img src="img/logo/checkmark-logo.png" alt="" />
+          <div class="card">
+            <div class="circle">
+              <div class="contentInner">
+                <span>Web Dev.</span>
               </div>
-
-              <div class="subtitulo">
-                E assim começou minha jornada como programador! Quando terminei
-                o colégio quis fazer um tecnólogo como Analista de Sistemas na
-                FIAP, e estou lá até hoje.
+              <div class="hover">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <div class="skillsPercentage">
+                <h4 class="html">HTML</h4>
+                <h4 class="css">CSS</h4>
+                <h4 class="javaScript">JavaScript</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <div class="contentInner">
+                <span>Web Design</span>
+              </div>
+              <div class="hover">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <div class="skillsPercentage">
+                <h4 class="ills">Illustrator</h4>
+                <h4 class="phot">Photshop</h4>
+                <h4 class="maya">Maya</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <div class="contentInner">
+                <span>Languages</span>
+              </div>
+              <div class="hover">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <div class="skillsPercentage">
+                <h4 class="eng">English</h4>
+                <h4 class="pt">Portuguese</h4>
+                <h4 class="spanish">Spanish</h4>
               </div>
             </div>
           </div>
@@ -217,18 +267,4 @@
       </div>
     </div>
   </body>
-
-  <!--/Colocar o javascript-->
-  <script>
-    const portitens = document.querySelectorAll(".item-portifolio");
-    portitens.forEach((portitens) => {
-      portitens.addEventListener("mouseover", () => {
-        portitens.childNodes[1].classList.add("img-darken");
-      });
-
-      portitens.addEventListener("mouseout", () => {
-        portitens.childNodes[1].classList.remove("img-darken");
-      });
-    });
-  </script>
 </html>
