@@ -37,8 +37,9 @@ nav h2 {
   padding: 0;
 }
 .navbar-toggler-icon:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
 }
 
 .nav-link {
@@ -2513,7 +2514,7 @@ h4 {
     padding: 1rem;
   }
   .content-projects {
-    margin-top: 15rem !important;
+    margin-top: 9rem !important;
     width: 100%;
     display: grid;
     justify-content: center;
