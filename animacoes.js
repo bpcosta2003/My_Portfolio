@@ -1,3 +1,17 @@
+var open = false;
+
+function closeMenu() {
+  if (open == true) {
+    var html = `<i class="bi bi-list"></i>`;
+    $(".navbar-toggler-icon").html(html);
+  } else {
+    var html = `<i class="bi bi-x"></i>`;
+    $(".navbar-toggler-icon").html(html);
+  }
+
+  open = !open;
+}
+
 document.addEventListener("mousemove", (e) => {
   const x = e.pageX;
   const y = e.pageY;
@@ -126,7 +140,7 @@ function explorarD() {
 function explorarP() {
   var html = `
   
-  <div class="imagens" style="margin-top:0">
+  <div class="imagens">
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

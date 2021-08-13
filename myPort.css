@@ -1,3 +1,5 @@
+/* * Configurações Gerais */
+
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +23,7 @@ img {
   color: rgb(0, 255, 149);
 }
 
-/* / NAVBAR */
+/* * NavBar */
 
 .navbar {
   padding: 2rem;
@@ -36,6 +38,16 @@ nav h2 {
 .navbar-toggler {
   padding: 0;
 }
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: rgba(0, 0, 0, 0.616);
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  padding: 0;
+}
+
 .navbar-toggler-icon:focus {
   outline: thin dotted;
   outline: 0px auto -webkit-focus-ring-color;
@@ -52,7 +64,8 @@ nav h2 {
   color: rgb(0, 255, 149) !important;
 }
 
-.bi-list {
+.bi-list,
+.bi-x {
   color: white;
   font-size: 1.5em;
 }
@@ -60,29 +73,6 @@ nav h2 {
 .nav-link,
 .navbar-brand {
   animation: jello-horizontal 0.9s both;
-}
-@keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 #home {
@@ -118,22 +108,6 @@ nav h2 {
   border-radius: 20px;
 }
 
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
-  }
-}
-
 .box {
   position: relative;
   width: 100%;
@@ -146,7 +120,7 @@ nav h2 {
 .box .section {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: start;
   background-blend-mode: luminosity;
 }
@@ -156,11 +130,11 @@ nav h2 {
 }
 
 .content {
-  margin-top: 7.5rem;
+  margin-top: 7.5em;
   padding: 2rem;
 }
 
-/* /HOME */
+/* * Home */
 
 #contentHome {
   width: 100%;
@@ -171,11 +145,13 @@ nav h2 {
     "left left";
 }
 #contentHome h1 {
+  font: size 5em;
   color: white;
 }
 
 #contentHome p,
 h4 {
+  font-size: 3em;
   color: white;
 }
 
@@ -195,7 +171,7 @@ h4 {
   border-radius: 25px;
 }
 
-/* /ABOUT ME */
+/* * About Me */
 
 #contentAbout {
   width: 100%;
@@ -204,13 +180,13 @@ h4 {
   grid-template-areas: "right left";
 }
 #contentAbout h1 {
-  font-size: 5em;
+  font-size: 3em;
   color: white;
 }
 
 #contentAbout p,
 h4 {
-  font-size: 1em;
+  font-size: 2.5em;
   color: white;
 }
 
@@ -259,15 +235,6 @@ h4 {
 .moreAbout:hover {
   transform: scale(0.9);
   transform: translateY(2px);
-}
-
-@keyframes blur {
-  0% {
-    backdrop-filter: blur(0);
-  }
-  100% {
-    backdrop-filter: blur(1rem);
-  }
 }
 
 .socialMedia {
@@ -322,67 +289,7 @@ h4 {
   color: white;
 }
 
-@keyframes change {
-  0% {
-    border: 2px solid rgb(0, 255, 149, 0.2);
-    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149, 0.2),
-      inset -4px -4px 6px -1px rgb(0, 255, 149, 0.2),
-      -0.5px -0.5px 0px rgb(0, 255, 149, 0.2),
-      0.5px 0.5px 10px rgb(0, 255, 149, 0.2),
-      0px 12px 10px -10px rgb(0, 255, 149, 0.2);
-  }
-  25% {
-    border: 2px solid rgb(0, 255, 149);
-    box-shadow: inset 2px 4px 6px -1px rgb(0, 255, 149),
-      inset -2px -4px 6px -1px rgb(0, 255, 149),
-      -0.5px -0.5px 10px rgb(0, 255, 149), 0.5px 0.5px 0px rgb(0, 255, 149),
-      0px 10px 10px -10px rgb(0, 255, 149);
-  }
-  50% {
-    border: 2px solid rgb(0, 255, 149, 0.2);
-    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149, 0.2),
-      inset -4px -4px 6px -1px rgb(0, 255, 149, 0.2),
-      -0.5px -0.5px 0px rgb(0, 255, 149, 0.2),
-      0.5px 0.5px 10px rgb(0, 255, 149, 0.2),
-      0px 12px 10px -10px rgb(0, 255, 149, 0.2);
-  }
-  75% {
-    border: 2px solid rgb(0, 255, 149);
-    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149),
-      inset -4px -4px 6px -1px rgb(0, 255, 149),
-      -0.5px -0.5px 10px rgb(0, 255, 149), 0.5px 0.5px 0px rgb(0, 255, 149),
-      0px 10px 10px -10px rgb(0, 255, 149);
-  }
-  100% {
-    border: 2px solid rgba(0, 255, 149, 0.2);
-    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149, 0.2),
-      inset -4px -4px 6px -1px rgb(0, 255, 149, 0.2),
-      -0.5px -0.5px 0px rgb(0, 255, 149, 0.2),
-      0.5px 0.5px 10px rgb(0, 255, 149, 0.2),
-      0px 12px 10px -10px rgb(0, 255, 149, 0.2);
-  }
-}
-@keyframes rechange {
-  0% {
-    border: 2px solid rgba(0, 255, 149, 0);
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 255, 149, 0),
-      inset -4px -4px 6px -1px rgba(0, 255, 149, 0),
-      -0.5px -0.5px 0px rgba(0, 255, 149, 0),
-      0.5px 0.5px 10px rgba(0, 255, 149, 0),
-      0px 12px 10px -10px rgba(0, 255, 149, 0);
-  }
-
-  100% {
-    border: 2px solid rgba(0, 255, 149, 0);
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 255, 149, 0),
-      inset -4px -4px 6px -1px rgba(0, 255, 149, 0),
-      -0.5px -0.5px 0px rgba(0, 255, 149, 0),
-      0.5px 0.5px 10px rgba(0, 255, 149, 0),
-      0px 12px 10px -10px rgba(0, 255, 149, 0);
-  }
-}
-
-/* /PROJECTS */
+/* * Projects */
 
 .content-projects {
   width: 100%;
@@ -487,18 +394,6 @@ h4 {
   text-align: center;
   top: 0px;
   animation: pulsate-fwd 5s ease-in-out infinite alternate both;
-}
-
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .carousel-control-prev,
@@ -732,7 +627,7 @@ h4 {
   color: rgb(255, 255, 255);
 }
 
-/* / SKILLS PAGE */
+/* * Skills */
 
 #skills .content {
   width: 100%;
@@ -1022,18 +917,6 @@ h4 {
   animation: text-blur-out 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@keyframes opacidade {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 50%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 .card:hover,
 .card:focus-within {
   animation: change 5s infinite linear;
@@ -1070,35 +953,23 @@ h4 {
   transition-duration: 0ms;
 }
 
-@keyframes blink-1 {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-  25%,
-  75% {
-    opacity: 0.55;
-  }
-}
+/* * Media Screen */
 
-@keyframes text-blur-out {
-  0% {
-    filter: blur(12px) opacity(0);
-  }
-  100% {
-    filter: blur(0);
-  }
-}
+/* 
 
-/* /MEDIA SCREEN */
+
+1600 x 1200
+
+1920 x 1080
+
+*/
 
 @media screen and (min-width: 2000px) {
   h2.navbar-brand {
-    font-size: 3rem;
+    font-size: 3em;
   }
   .nav-link {
-    font-size: 2rem;
+    font-size: 2em;
   }
   .left img {
     width: 30rem;
@@ -1107,10 +978,10 @@ h4 {
     font-size: 10em;
   }
   #contentHome h4 {
-    font-size: 5rem;
+    font-size: 5em;
   }
   #contentHome p {
-    font-size: 3rem;
+    font-size: 3em;
   }
   #contentAbout {
     width: 100%;
@@ -1119,19 +990,19 @@ h4 {
     grid-template-areas: "right left";
   }
   #contentAbout h1 {
-    font-size: 10rem;
+    font-size: 10em;
     color: white;
   }
 
   #contentAbout p,
   h4 {
-    font-size: 2rem;
+    font-size: 2em;
     color: white;
   }
 
   .imgperfil img {
-    width: 50rem;
-    height: 40rem;
+    width: 50em;
+    height: 40em;
   }
 
   .moreAbout {
@@ -1153,7 +1024,7 @@ h4 {
       -6px -6px 10px -1px rgba(97, 97, 97, 0);
     transition: transform 0.5s;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    margin-top: 3em;
   }
   .socialMedia a i {
     font-size: 45px;
@@ -1162,13 +1033,11 @@ h4 {
     flex-wrap: wrap;
   }
   .content {
-    margin-top: 12rem;
+    margin-top: 12em;
   }
 
-  /* * RESPONSIVIDADE */
-
   .content-projects {
-    margin-top: 15rem;
+    margin-top: 15em;
     width: 100%;
     display: grid;
     grid-template-areas: "contentProjects contentProjectsPython contentProjectsWeb";
@@ -1176,12 +1045,10 @@ h4 {
 
   /* ! IMG 1 */
 
-  /* * RESPONSIVIDADE */
-
   #contentProjects {
     grid-area: contentProjects;
-    padding: 15rem 0 0;
-    margin: 3rem;
+    padding: 15em 0 0;
+    margin: 3em;
     background-image: url(/img/bruno-costa-capitao-america-poligonal-art.jpg);
     backdrop-filter: blur(0.25em);
     border-radius: 25px;
@@ -1192,43 +1059,11 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  /* * RESPONSIVIDADE */
-
   .boxProjects {
     padding: 2.5rem;
     transform: translateY(60%);
     transition: transform 500ms ease;
   }
-
-  .boxProjects h4,
-  .boxProjects a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjects:hover,
-  #contentProjects:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjects:hover > .boxProjects h4,
-  #contentProjects:hover > .boxProjects a,
-  #contentProjects:focus-within > .boxProjects h4,
-  #contentProjects:focus-within > .boxProjects a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjects:hover .boxProjects,
-  #contentProjects:focus-within .boxProjects {
-    transform: translateY(0);
-  }
-
-  #contentProjects:focus-within .boxProjects {
-    transition-duration: 0ms;
-  }
-
-  /* * RESPONSIVIDADE */
 
   .boxProjects h2 {
     font-size: 3rem;
@@ -1241,20 +1076,7 @@ h4 {
   .boxProjects a {
     font-size: 2rem;
   }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
+
   /* ! IMG 2 */
 
   #contentProjectsPython {
@@ -1277,34 +1099,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsPython h4,
-  .boxProjectsPython a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsPython:hover,
-  #contentProjectsPython:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsPython:hover > .boxProjectsPython h4,
-  #contentProjectsPython:hover > .boxProjectsPython a,
-  #contentProjectsPython:focus-within > .boxProjectsPython h4,
-  #contentProjectsPython:focus-within > .boxProjectsPython a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsPython:hover .boxProjectsPython,
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transform: translateY(0);
-  }
-
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transition-duration: 0ms;
-  }
-
   .boxProjectsPython h2 {
     font-size: 3rem;
     color: white;
@@ -1317,20 +1111,6 @@ h4 {
     font-size: 2rem;
   }
 
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
   /* ! IMG 3 */
 
   #contentProjectsWeb {
@@ -1353,34 +1133,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsWeb h4,
-  .boxProjectsWeb a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsWeb:hover,
-  #contentProjectsWeb:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsWeb:hover > .boxProjectsWeb h4,
-  #contentProjectsWeb:hover > .boxProjectsWeb a,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb h4,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsWeb:hover .boxProjectsWeb,
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transform: translateY(0);
-  }
-
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transition-duration: 0ms;
-  }
-
   .boxProjectsWeb h2 {
     font-size: 3rem;
     color: white;
@@ -1391,20 +1143,6 @@ h4 {
   }
   .boxProjectsWeb a {
     font-size: 2rem;
-  }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
   }
 }
 
@@ -1485,7 +1223,6 @@ h4 {
   .content {
     margin-top: 8rem;
   }
-  /* * RESPONSIVIDADE */
 
   .content-projects {
     margin-top: 16rem;
@@ -1514,35 +1251,6 @@ h4 {
     transform: translateY(60%);
     transition: transform 500ms ease;
   }
-
-  .boxProjects h4,
-  .boxProjects a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjects:hover,
-  #contentProjects:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjects:hover > .boxProjects h4,
-  #contentProjects:hover > .boxProjects a,
-  #contentProjects:focus-within > .boxProjects h4,
-  #contentProjects:focus-within > .boxProjects a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjects:hover .boxProjects,
-  #contentProjects:focus-within .boxProjects {
-    transform: translateY(0);
-  }
-
-  #contentProjects:focus-within .boxProjects {
-    transition-duration: 0ms;
-  }
-
   .boxProjects h2 {
     font-size: 2rem;
     color: white;
@@ -1551,23 +1259,7 @@ h4 {
     font-size: 1rem;
     color: white;
   }
-  .boxProjects h4 {
-    color: rgba(255, 255, 255, 0.712);
-  }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
+
   /* ! IMG 2 */
 
   #contentProjectsPython {
@@ -1595,28 +1287,6 @@ h4 {
     transition: opacity 1500ms ease;
   }
 
-  #contentProjectsPython:hover,
-  #contentProjectsPython:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsPython:hover > .boxProjectsPython h4,
-  #contentProjectsPython:hover > .boxProjectsPython a,
-  #contentProjectsPython:focus-within > .boxProjectsPython h4,
-  #contentProjectsPython:focus-within > .boxProjectsPython a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsPython:hover .boxProjectsPython,
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transform: translateY(0);
-  }
-
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transition-duration: 0ms;
-  }
-
   .boxProjectsPython h2 {
     font-size: 2rem;
     color: white;
@@ -1628,20 +1298,7 @@ h4 {
   .boxProjectsPython h4 {
     color: rgba(255, 255, 255, 0.712);
   }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
+
   /* ! IMG 3 */
 
   #contentProjectsWeb {
@@ -1663,34 +1320,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsWeb h4,
-  .boxProjectsWeb a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsWeb:hover,
-  #contentProjectsWeb:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsWeb:hover > .boxProjectsWeb h4,
-  #contentProjectsWeb:hover > .boxProjectsWeb a,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb h4,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsWeb:hover .boxProjectsWeb,
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transform: translateY(0);
-  }
-
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transition-duration: 0ms;
-  }
-
   .boxProjectsWeb h2 {
     font-size: 2rem;
     color: white;
@@ -1699,34 +1328,23 @@ h4 {
     font-size: 1rem;
     color: white;
   }
-  .boxProjectsWeb h4 {
-    color: rgba(255, 255, 255, 0.712);
-  }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
+
+  @media screen and (max-height: 900px) {
+    #contentAbout.content {
+      margin-top: 8rem;
+    }
   }
 }
 
-@media screen and (max-width: 1232px) {
+@media screen and (max-width: 1366px) {
   h2.navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   .nav-link {
-    font-size: 1rem;
+    font-size: 1em;
   }
   .left img {
-    width: 15rem;
+    width: 15em;
   }
   #contentHome h1 {
     font-size: 3em;
@@ -1747,20 +1365,20 @@ h4 {
     grid-template-areas: "right left";
   }
   #contentAbout h1 {
-    font-size: 4rem;
+    font-size: 4em;
     color: white;
   }
   #contentAbout.content {
-    margin-top: 6rem;
+    margin-top: 6em;
   }
 
   #skills .content {
-    margin-top: 13rem;
+    margin-top: 13em;
   }
 
   #contentAbout p,
   h4 {
-    font-size: 1rem;
+    font-size: 1em;
     color: white;
   }
 
@@ -1845,49 +1463,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjects h4,
-  .boxProjects a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjects:hover,
-  #contentProjects:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjects:hover > .boxProjects h4,
-  #contentProjects:hover > .boxProjects a,
-  #contentProjects:focus-within > .boxProjects h4,
-  #contentProjects:focus-within > .boxProjects a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjects:hover .boxProjects,
-  #contentProjects:focus-within .boxProjects {
-    transform: translateY(0);
-  }
-
-  #contentProjects:focus-within .boxProjects {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
-
   .boxProjects h2 {
     font-size: 1.4rem;
     color: white;
@@ -1923,49 +1498,6 @@ h4 {
     padding: 1.5rem;
     transform: translateY(60%);
     transition: transform 500ms ease;
-  }
-
-  .boxProjectsPython h4,
-  .boxProjectsPython a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsPython:hover,
-  #contentProjectsPython:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsPython:hover > .boxProjectsPython h4,
-  #contentProjectsPython:hover > .boxProjectsPython a,
-  #contentProjectsPython:focus-within > .boxProjectsPython h4,
-  #contentProjectsPython:focus-within > .boxProjectsPython a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsPython:hover .boxProjectsPython,
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transform: translateY(0);
-  }
-
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
   }
 
   .boxProjectsPython h2 {
@@ -2004,49 +1536,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsWeb h4,
-  .boxProjectsWeb a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsWeb:hover,
-  #contentProjectsWeb:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsWeb:hover > .boxProjectsWeb h4,
-  #contentProjectsWeb:hover > .boxProjectsWeb a,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb h4,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsWeb:hover .boxProjectsWeb,
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transform: translateY(0);
-  }
-
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
-
   .boxProjectsWeb h2 {
     font-size: 1.4rem;
     color: white;
@@ -2058,6 +1547,49 @@ h4 {
   }
   .boxProjectsWeb a {
     font-size: 0.7rem;
+  }
+  @media screen and (min-height: 576px) {
+    #contentAbout h1 {
+      font-size: 3em;
+    }
+
+    #contentAbout p,
+    h4 {
+      font-size: 0.7em;
+    }
+
+    .imgperfil img {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .left img {
+      width: 10rem;
+      height: 10rem;
+    }
+    .left {
+      padding: 0;
+    }
+    .content-projects {
+      margin-top: 2rem;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      grid-template-areas:
+        "contentProjects"
+        "contentProjectsPython"
+        "contentProjectsWeb ";
+    }
+    .imagens img {
+      width: 15em;
+      height: 15em;
+    }
+    .imagens {
+      margin-top: 5rem;
+    }
+    .imagens h1 {
+      font-size: 1.5em;
+    }
   }
 }
 
@@ -2193,54 +1725,9 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjects h4,
-  .boxProjects a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjects:hover,
-  #contentProjects:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjects:hover > .boxProjects h4,
-  #contentProjects:hover > .boxProjects a,
-  #contentProjects:focus-within > .boxProjects h4,
-  #contentProjects:focus-within > .boxProjects a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjects:hover .boxProjects,
-  #contentProjects:focus-within .boxProjects {
-    transform: translateY(0);
-  }
-
-  #contentProjects:focus-within .boxProjects {
-    transition-duration: 0ms;
-  }
-
   .boxProjects h2,
   h4 {
     color: white;
-  }
-  .boxProjects h4 {
-    color: rgba(255, 255, 255, 0.712);
-  }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
   }
 
   .boxProjects h2 {
@@ -2280,49 +1767,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsPython h4,
-  .boxProjectsPython a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsPython:hover,
-  #contentProjectsPython:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsPython:hover > .boxProjectsPython h4,
-  #contentProjectsPython:hover > .boxProjectsPython a,
-  #contentProjectsPython:focus-within > .boxProjectsPython h4,
-  #contentProjectsPython:focus-within > .boxProjectsPython a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsPython:hover .boxProjectsPython,
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transform: translateY(0);
-  }
-
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
-
   .boxProjectsPython h2 {
     font-size: 1rem;
     color: white;
@@ -2359,49 +1803,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsWeb h4,
-  .boxProjectsWeb a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsWeb:hover,
-  #contentProjectsWeb:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsWeb:hover > .boxProjectsWeb h4,
-  #contentProjectsWeb:hover > .boxProjectsWeb a,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb h4,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsWeb:hover .boxProjectsWeb,
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transform: translateY(0);
-  }
-
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
-
   .boxProjectsWeb h2 {
     font-size: 1rem;
     color: white;
@@ -2417,6 +1818,8 @@ h4 {
 
   #skills .content {
     margin-top: 12rem;
+  }
+  @media screen and (max-height: 600) {
   }
 }
 
@@ -2524,12 +1927,6 @@ h4 {
       "contentProjectsWeb ";
   }
 
-  #home img,
-  #about img {
-    -webkit-animation: kenburns-top 5s ease-out both;
-    animation: kenburns-top 5s ease-out both;
-  }
-
   .imagens img {
     max-width: 100%;
     width: 15em;
@@ -2561,54 +1958,9 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjects h4,
-  .boxProjects a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjects:hover,
-  #contentProjects:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjects:hover > .boxProjects h4,
-  #contentProjects:hover > .boxProjects a,
-  #contentProjects:focus-within > .boxProjects h4,
-  #contentProjects:focus-within > .boxProjects a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjects:hover .boxProjects,
-  #contentProjects:focus-within .boxProjects {
-    transform: translateY(0);
-  }
-
-  #contentProjects:focus-within .boxProjects {
-    transition-duration: 0ms;
-  }
-
   .boxProjects h2,
   h4 {
     color: white;
-  }
-  .boxProjects h4 {
-    color: rgba(255, 255, 255, 0.712);
-  }
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
   }
 
   .boxProjects h2 {
@@ -2648,49 +2000,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsPython h4,
-  .boxProjectsPython a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsPython:hover,
-  #contentProjectsPython:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsPython:hover > .boxProjectsPython h4,
-  #contentProjectsPython:hover > .boxProjectsPython a,
-  #contentProjectsPython:focus-within > .boxProjectsPython h4,
-  #contentProjectsPython:focus-within > .boxProjectsPython a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsPython:hover .boxProjectsPython,
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transform: translateY(0);
-  }
-
-  #contentProjectsPython:focus-within .boxProjectsPython {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
-
   .boxProjectsPython h2 {
     font-size: 1rem;
     color: white;
@@ -2727,49 +2036,6 @@ h4 {
     transition: transform 500ms ease;
   }
 
-  .boxProjectsWeb h4,
-  .boxProjectsWeb a {
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  #contentProjectsWeb:hover,
-  #contentProjectsWeb:focus-within {
-    transform: scale(1.05);
-  }
-
-  #contentProjectsWeb:hover > .boxProjectsWeb h4,
-  #contentProjectsWeb:hover > .boxProjectsWeb a,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb h4,
-  #contentProjectsWeb:focus-within > .boxProjectsWeb a {
-    opacity: 1;
-    transition: opacity 500ms linear;
-  }
-
-  #contentProjectsWeb:hover .boxProjectsWeb,
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transform: translateY(0);
-  }
-
-  #contentProjectsWeb:focus-within .boxProjectsWeb {
-    transition-duration: 0ms;
-  }
-
-  .link {
-    color: white;
-    background: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(2em);
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5em 1.25em;
-    border-radius: 0.5em;
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(0, 255, 149);
-  }
-
   .boxProjectsWeb h2 {
     font-size: 1rem;
     color: white;
@@ -2782,8 +2048,6 @@ h4 {
   .boxProjectsWeb a {
     font-size: 0.7rem;
   }
-
-  /*/*/
 
   #skills .content {
     margin-top: 6rem;
@@ -3066,6 +2330,16 @@ h4 {
     box-shadow: 0px 10px 13px -7px #000000;
     backdrop-filter: blur(1rem);
   }
+  .card:hover,
+  .card:focus-within {
+    animation: rechange 5s infinite linear;
+    transform: scale(1.05);
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.5),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.13),
+      -0.5px -0.5px 0px rgba(0, 0, 0, 0.089),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+      0px 12px 10px -10px rgba(255, 255, 255, 0);
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -3156,9 +2430,160 @@ h4 {
   .right {
     padding: 1rem;
   }
-  #home img,
-  #about img {
-    -webkit-animation: kenburns-top 5s ease-out both;
-    animation: kenburns-top 5s ease-out both;
+}
+
+/* * Keyframes */
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes blur {
+  0% {
+    backdrop-filter: blur(0);
+  }
+  100% {
+    backdrop-filter: blur(1rem);
+  }
+}
+
+@keyframes change {
+  0% {
+    border: 2px solid rgb(0, 255, 149, 0.2);
+    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149, 0.2),
+      inset -4px -4px 6px -1px rgb(0, 255, 149, 0.2),
+      -0.5px -0.5px 0px rgb(0, 255, 149, 0.2),
+      0.5px 0.5px 10px rgb(0, 255, 149, 0.2),
+      0px 12px 10px -10px rgb(0, 255, 149, 0.2);
+  }
+  25% {
+    border: 2px solid rgb(0, 255, 149);
+    box-shadow: inset 2px 4px 6px -1px rgb(0, 255, 149),
+      inset -2px -4px 6px -1px rgb(0, 255, 149),
+      -0.5px -0.5px 10px rgb(0, 255, 149), 0.5px 0.5px 0px rgb(0, 255, 149),
+      0px 10px 10px -10px rgb(0, 255, 149);
+  }
+  50% {
+    border: 2px solid rgb(0, 255, 149, 0.2);
+    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149, 0.2),
+      inset -4px -4px 6px -1px rgb(0, 255, 149, 0.2),
+      -0.5px -0.5px 0px rgb(0, 255, 149, 0.2),
+      0.5px 0.5px 10px rgb(0, 255, 149, 0.2),
+      0px 12px 10px -10px rgb(0, 255, 149, 0.2);
+  }
+  75% {
+    border: 2px solid rgb(0, 255, 149);
+    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149),
+      inset -4px -4px 6px -1px rgb(0, 255, 149),
+      -0.5px -0.5px 10px rgb(0, 255, 149), 0.5px 0.5px 0px rgb(0, 255, 149),
+      0px 10px 10px -10px rgb(0, 255, 149);
+  }
+  100% {
+    border: 2px solid rgba(0, 255, 149, 0.2);
+    box-shadow: inset 4px 4px 6px -1px rgb(0, 255, 149, 0.2),
+      inset -4px -4px 6px -1px rgb(0, 255, 149, 0.2),
+      -0.5px -0.5px 0px rgb(0, 255, 149, 0.2),
+      0.5px 0.5px 10px rgb(0, 255, 149, 0.2),
+      0px 12px 10px -10px rgb(0, 255, 149, 0.2);
+  }
+}
+@keyframes rechange {
+  0% {
+    border: 2px solid rgba(0, 255, 149, 0);
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 255, 149, 0),
+      inset -4px -4px 6px -1px rgba(0, 255, 149, 0),
+      -0.5px -0.5px 0px rgba(0, 255, 149, 0),
+      0.5px 0.5px 10px rgba(0, 255, 149, 0),
+      0px 12px 10px -10px rgba(0, 255, 149, 0);
+  }
+
+  100% {
+    border: 2px solid rgba(0, 255, 149, 0);
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 255, 149, 0),
+      inset -4px -4px 6px -1px rgba(0, 255, 149, 0),
+      -0.5px -0.5px 0px rgba(0, 255, 149, 0),
+      0.5px 0.5px 10px rgba(0, 255, 149, 0),
+      0px 12px 10px -10px rgba(0, 255, 149, 0);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes opacidade {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes text-blur-out {
+  0% {
+    filter: blur(12px) opacity(0);
+  }
+  100% {
+    filter: blur(0);
   }
 }
