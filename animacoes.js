@@ -87,6 +87,8 @@ function explorar(designProjects) {
   } else {
     itens.push(`<h1>HEALTH TRACK</h1>
     <a target="_blank" href="https://healthtrackapp-bybrunocosta.surge.sh/"><img src="/img/HealthTrackImg1.png" alt=""></a>`);
+    itens.push(`<h1>CLOCK APP</h1>
+    <a target="_blank" href="https://clock-bybrunocosta.surge.sh/"><img src="/img/Clock_img.png" alt=""></a>`);
     itens.push(` <h1>SHOPPING LIST</h1>
     <a target="_blank" href="https://shoppinglist-bybrunocosta.surge.sh"><img src="/img/ShoppingList_Cookies.png" alt=""></a>`);
     itens.push(`<h1>BATTLE RPG</h1>
@@ -102,12 +104,19 @@ function explorar(designProjects) {
 
     <div class="imagens">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <div class="carousel-indicators"> 
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>`;
+  for (var i = 1; i < itens.length; i++) {
+    htmlProj +=
+      `<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="` +
+      i +
+      `" aria-label="Slide` +
+      i +
+      1 +
+      `"></button>`;
+  }
+
+  htmlProj += `
         </div> 
         <div class="carousel-inner">
         `;
