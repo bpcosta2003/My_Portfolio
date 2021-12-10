@@ -70,11 +70,6 @@ nav h2 {
   font-size: 1.5em;
 }
 
-.nav-link,
-.navbar-brand {
-  animation: jello-horizontal 0.9s both;
-}
-
 #home {
   background: rgb(0, 0, 0)
     url("https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
@@ -262,7 +257,6 @@ h4 {
     -6px -6px 10px -1px rgba(97, 97, 97, 0);
   transition: transform 0.5s;
   flex-wrap: wrap;
-  animation: change 5s infinite linear;
 }
 
 .socialMedia a i {
