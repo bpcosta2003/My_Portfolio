@@ -18,6 +18,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
     />
@@ -25,16 +29,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="myPort.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>BRUNO COSTA - My Portifolio</title>
   </head>
 
   <body>
     <!--/container-->
-    <div class="box">
+    <div class="home" id="home">
       <!-- /navbar -->
-      <nav class="navbar fixed-top navbar-expand-lg">
+      <nav id="conteudo" class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
           <h2 class="navbar-brand">Bruno Costa</h2>
 
@@ -58,125 +66,57 @@
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
-              <a class="nav-link" href="#home">HOME</a>
-              <a class="nav-link" href="#projects">PROJECTS</a>
+              <a class="nav-link active" href="#home">HOME</a>
               <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#projects">PROJECTS</a>
               <a class="nav-link" href="#skills">SKILLS</a>
-              <a class="nav-link" href="mailto:bruno.p.costa.2003@gmail.com"
-                >CONTACT</a
-              >
+              <a class="nav-link" href="#contact">CONTACT</a>
             </div>
           </div>
         </div>
       </nav>
-      <!--/Conteúdo do Home-->
-      <div class="section" id="home">
-        <div class="content" id="contentHome">
-          <div class="left">
-            <img src="img/perfil.jpg" alt="" />
-          </div>
 
-          <div class="right">
-            <div class="about">
-              <h1>Hello</h1>
-              <h4>I'm Bruno Costa,</h4>
-              <p>Web development, Web Design & Python programmer.</p>
-            </div>
-          </div>
+      <!--/Conteúdo-->
+
+      <div class="content">
+        <div class="hello">
+          <h1>Hello</h1>
+          <h4>I'm Bruno Costa,</h4>
+          <p>Web development, Web Design & Python programmer.</p>
         </div>
+        <img src="img/perfil.jpg" alt="" />
       </div>
-      <!--/Conteúdo do Projects-->
-
-      <div class="section" id="projects">
-        <div class="content content-projects">
-          <div id="contentProjects">
-            <div class="boxProjects">
-              <h2 class="title">DESIGN PROJECTS</h2>
-              <h4>
-                Made in Illustrator and Photoshop. You can see poligonal arts,
-                type arts, minimalist arts and 3D arts.
-              </h4>
-              <a onclick="explorar('d')" class="link">PREVIEW </a>
-              <div class="iconesProject">
-                <a
-                  class="icon"
-                  target="_blank"
-                  href="https://www.artstation.com/brunodpc2003"
-                  ><i class="fab fa-artstation"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div id="contentProjectsPython">
-            <div class="boxProjectsPython">
-              <h2 class="title">PYTHON PROJECTS</h2>
-              <h4>
-                Made with python. You can see codes of files manipulation,
-                dictionaries and more.
-              </h4>
-              <a onclick="explorar('p')" class="link">PREVIEW</a>
-              <div class="iconesProject">
-                <a
-                  class="icon"
-                  target="_blank"
-                  href="https://github.com/bpcosta2003"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div id="contentProjectsWeb">
-            <div class="boxProjectsWeb">
-              <h2 class="title">WEB PROJECTS</h2>
-              <h4>
-                Made with HTML, CSS and JAVASCRIPT. You can see a shopping list,
-                top trumps and more.
-              </h4>
-              <a onclick="explorar('w')" class="link">PREVIEW </a>
-              <div class="iconesProject">
-                <a
-                  class="icon"
-                  target="_blank"
-                  href="https://github.com/bpcosta2003"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="iconScroll">
+        <p>Scroll Page</p>
+        <i class="bi bi-arrow-bar-down"></i>
       </div>
+    </div>
 
-      <!--/Conteúdo do About-->
-      <div class="section" id="about">
-        <div class="content" id="contentAbout">
-          <div class="imgperfil">
-            <img src="img/perfil.jpg" alt="" />
+    <div class="about" id="about">
+      <h1 class="reference" data-anime="top">About me</h1>
+      <div class="main" data-anime="top">
+        <div class="contentAboutme">
+          <div id="aboutMePart">
+            <h1>Hi!</h1>
+            <p>
+              I'm a Front-End and Back-End developer, designer and python
+              programmer. I can consider myself a prudent person, knowing the
+              risks before defining my actions. In areas such as logistics or
+              production, for example, I can work with methodologies that allow
+              me to anticipate scenarios and avoid problems, which will probably
+              be comfortable for me. In these areas I can highlight myself by my
+              organization characteristics, process vision and cooperative
+              profile. For me the mistake is a learning, I work a lot to know
+              how to deal with them.
+            </p>
+            <button class="moreAbout" onclick="moreAbout()">
+              SEE MY JOURNEY <i class="bi bi-caret-right-fill"></i>
+            </button>
           </div>
-          <div class="contentAboutme">
-            <div id="aboutMePart" class="about">
-              <h1 id="aboutTop">Hi!</h1>
-              <p id="aboutContent">
-                I have recently started learning Web development, but I always
-                like to be learning and I use this knowledge for my life. I can
-                consider myself a prudent person, knowing the risks before
-                defining my actions. In areas such as logistics or production,
-                for example, I can work with methodologies that allow me to
-                anticipate scenarios and avoid problems, which will probably be
-                comfortable for me. In these areas I can highlight myself by my
-                organization characteristics, process vision and cooperative
-                profile. For me the mistake is a learning, I work a lot to know
-                how to deal with them.
-              </p>
-              <button class="moreAbout" onclick="moreAbout()">
-                SEE MY JOURNEY <i class="bi bi-caret-right-fill"></i>
-              </button>
-            </div>
-
+          <div class="me">
             <div class="socialMedia">
-              <a
-                href="https://www.facebook.com/profile.php?id=100013404461306"
-                target="_blank"
-                ><i class="fab fa-facebook"></i
+              <a href="https://github.com/bpcosta2003" target="_blank"
+                ><i class="fab fa-github"></i
               ></a>
               <a href="https://twitter.com/BrunodpC" target="_blank"
                 ><i class="fab fa-twitter"></i
@@ -192,76 +132,194 @@
                 ><i class="fab fa-linkedin"></i
               ></a>
             </div>
+            <img src="img/perfil.jpg" alt="" />
           </div>
         </div>
       </div>
+    </div>
 
-      <!--/Conteúdo do Skills-->
-      <div class="section" id="skills">
-        <div class="content skillsContent">
-          <div class="card">
-            <div class="circle">
-              <div class="contentInner">
-                <span>Programming</span>
-              </div>
-              <div class="hover">
-                <i class="bi bi-award-fill"></i>
-              </div>
-              <div class="skillsPercentage">
-                <h4 class="python">Python</h4>
-                <h4 class="java">Java</h4>
-                <h4 class="typeScript">TypeScript</h4>
-              </div>
+    <div class="projects" id="projects">
+      <h1 class="reference" data-anime="left">Projects</h1>
+      <div class="box" data-anime="left">
+        <div class="card">
+          <h2 class="title">DESIGN PROJECTS</h2>
+          <i class="bi bi-vector-pen"></i>
+
+          <h4>
+            Made in Illustrator and Photoshop. You can see poligonal arts, type
+            arts, minimalist arts and 3D arts.
+          </h4>
+          <a onclick="explorar('d')" class="link">PREVIEW </a>
+          <div class="iconesProject">
+            <a
+              class="icon"
+              target="_blank"
+              href="https://www.artstation.com/brunodpc2003"
+              ><i class="fab fa-artstation"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">PYTHON PROJECTS</h2>
+          <i class="fab fa-python"></i>
+          <h4>
+            Made with python. You can see codes of files manipulation,
+            dictionaries and more.
+          </h4>
+          <a onclick="explorar('p')" class="link">PREVIEW</a>
+          <div class="iconesProject">
+            <a
+              class="icon"
+              target="_blank"
+              href="https://github.com/bpcosta2003"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">WEB PROJECTS</h2>
+          <i class="bi bi-globe2"></i>
+          <h4>
+            Made with HTML, CSS and JAVASCRIPT. You can see a shopping list, top
+            trumps and more.
+          </h4>
+          <a onclick="explorar('w')" class="link">PREVIEW </a>
+          <div class="iconesProject">
+            <a
+              class="icon"
+              target="_blank"
+              href="https://github.com/bpcosta2003"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills" id="skills">
+      <h1 class="reference" data-anime="top">Skills</h1>
+      <div class="boxSkill" data-anime="top">
+        <div class="cardSkill">
+          <div class="circle">
+            <div class="contentInner p">
+              <span
+                >Programming Languages <i class="bi bi-award-fill"></i
+              ></span>
+              <hr />
+            </div>
+
+            <div class="skillsPercentage sp">
+              <h4 class="python">Python</h4>
+              <h4 class="html">HTML</h4>
+              <h4 class="css">CSS</h4>
+              <h4 class="javaScript">JavaScript</h4>
+              <h4 class="typeScript">TypeScript</h4>
+              <h4 class="java">Java</h4>
+              <h4 class="sass">SASS</h4>
+              <h4 class="sql">SQL</h4>
             </div>
           </div>
-          <div class="card">
-            <div class="circle">
-              <div class="contentInner">
-                <span>Web Dev.</span>
-              </div>
-              <div class="hover">
-                <i class="bi bi-award-fill"></i>
-              </div>
-              <div class="skillsPercentage">
-                <h4 class="html">HTML</h4>
-                <h4 class="css">CSS</h4>
-                <h4 class="javaScript">JavaScript</h4>
-              </div>
+        </div>
+        <div class="cardSkill">
+          <div class="circle">
+            <div class="contentInner f">
+              <span>Frameworks <i class="bi bi-award-fill"></i></span>
+              <hr />
+            </div>
+
+            <div class="skillsPercentage sf">
+              <h4 class="react">React</h4>
+              <h4 class="native">React-Native</h4>
+              <h4 class="boots">Bootstrap</h4>
+              <h4 class="ajax">Ajax</h4>
+              <h4 class="jquery">Jquery</h4>
+              <h4 class="express">Express</h4>
+              <h4 class="sequelize">Sequelize</h4>
+              <h4 class="cors">CORS</h4>
+              <h4 class="sqlite">SQlite3</h4>
+              <h4 class="node">Node.js</h4>
             </div>
           </div>
-          <div class="card">
-            <div class="circle">
-              <div class="contentInner">
-                <span>Web Design</span>
-              </div>
-              <div class="hover">
-                <i class="bi bi-award-fill"></i>
-              </div>
-              <div class="skillsPercentage">
-                <h4 class="ills">Illustrator</h4>
-                <h4 class="phot">Photshop</h4>
-                <h4 class="maya">Maya</h4>
-              </div>
+        </div>
+        <div class="cardSkill">
+          <div class="circle">
+            <div class="contentInner w">
+              <span>Web Design <i class="bi bi-award-fill"></i></span>
+              <hr />
+            </div>
+
+            <div class="skillsPercentage sw">
+              <h4 class="ills">Illustrator</h4>
+              <h4 class="phot">Photshop</h4>
+              <h4 class="maya">Maya</h4>
             </div>
           </div>
-          <div class="card">
-            <div class="circle">
-              <div class="contentInner">
-                <span>Languages</span>
-              </div>
-              <div class="hover">
-                <i class="bi bi-award-fill"></i>
-              </div>
-              <div class="skillsPercentage">
-                <h4 class="eng">English</h4>
-                <h4 class="pt">Portuguese</h4>
-                <h4 class="spanish">Spanish</h4>
-              </div>
+        </div>
+        <div class="cardSkill">
+          <div class="circle">
+            <div class="contentInner l">
+              <span>Languages <i class="bi bi-award-fill"></i></span>
+              <hr />
+            </div>
+
+            <div class="skillsPercentage sl">
+              <h4 class="eng">English</h4>
+              <h4 class="pt">Portuguese</h4>
+              <h4 class="spanish">Spanish</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="contact" id="contact">
+      <div class="workingTg">
+        <h1 class="reference" data-anime="left">
+          Cotact Me
+          <p>LET'S WORK TOGETHER</p>
+        </h1>
+      </div>
+      <div class="boxContact" data-anime="left">
+        <form action="mailto:bruno.contactfreelance@gmail.com" method="post">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput2"
+              placeholder="name@example.com"
+              name="email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              maxlength="100"
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <h1>Copyrights &copy; 2022 DevBrunoCosta. All Rights Reserved.</h1>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -270,6 +328,7 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="animacoes.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
