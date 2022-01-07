@@ -802,6 +802,7 @@ footer h1 {
   text-decoration: none;
   cursor: pointer;
   border: 1px solid transparent;
+  border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
   backdrop-filter: blur(20px);
@@ -815,6 +816,8 @@ footer h1 {
   justify-content: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   width: 52.5%;
 }
 
@@ -1055,15 +1058,30 @@ footer h1 {
   }
 }
 
+@media (min-width: 1225px) and (max-width: 1550px) {
+  .hello h1,
+  h4 {
+    font-size: 50px;
+  }
+  .content:hover img {
+    right: -470px !important;
+  }
+}
+
 @media (max-width: 1550px) {
   .content {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 991px) {
+  .content {
     width: 100%;
-    left: 0%;
+    left: 0;
   }
   .content .hello:before {
     display: none;
   }
-
   .content img {
     display: none;
   }
@@ -1080,5 +1098,32 @@ footer h1 {
     width: 300px;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media (min-width: 2560px) {
+  .navbar-brand,
+  .nav-link {
+    font-size: 25px;
+  }
+  .content .hello {
+    margin-left: 15rem;
+  }
+  #aboutMePart p {
+    font-size: 20px;
+  }
+  .box {
+    justify-content: center;
+    gap: 50px;
+  }
+  .card {
+    width: 500px;
+  }
+}
+@media (max-width: 1650px) {
+  .content img {
+    width: 300px;
+  }
+  .content:hover img {
+    right: -370px;
   }
 }
