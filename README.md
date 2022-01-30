@@ -14,16 +14,8 @@ how to deal with them.
 
 <h4>See my portfolio here : <a href="https://myportifolio-bybrunocosta.surge.sh/"></a><h4>
 
-<div class="me">
-    <div class="socialMedia">
-        <a href="https://github.com/bpcosta2003" target="_blank"
-        ><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/BrunodpC" target="_blank"
-        ><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/brunodepaula2003/?hl=pt-br" target="_blank"
-        ><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/bruno-costa-3238161b5/" target="_blank"
-        ><i class="fab fa-linkedin"></i></a>
-    </div>
-    <img src="img/perfil.jpg" alt="" />
+<div> 
+  <a href="https://instagram.com/brunodepaula2003"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href = "mailto:bruno.p.costa.2003@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/bruno-costa-3238161b5/"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
