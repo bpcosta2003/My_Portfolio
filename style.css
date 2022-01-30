@@ -281,6 +281,15 @@ h4 {
   font-family: "Sarala", sans-serif;
 }
 
+#aboutMePart a {
+  text-decoration: none;
+  color: rgb(27, 110, 187);
+  transition: all 0.3s;
+}
+#aboutMePart a:hover {
+  color: rgb(16, 70, 121);
+}
+
 .me {
   display: flex;
   flex-direction: row;
@@ -702,6 +711,7 @@ form button {
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.5s;
+  /* animation: shake-horizontal 5s linear infinite; */
 }
 form textarea {
   max-height: 150px;
@@ -713,6 +723,30 @@ form button:focus {
   background-color: #121212;
   transition: all 0.5s;
   border: 1px solid white;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
 }
 /* * Footer Copyrights */
 
@@ -838,6 +872,27 @@ footer h1 {
   width: 100%;
   box-shadow: 10px 10px 100000px rgba(0, 255, 76, 0.8);
   transition: all 0.5s;
+}
+
+.techIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.cardProjeto i {
+  font-size: 2em;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.cardProjeto .mayaLogo {
+  width: 2em;
+  height: 2em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.cardProjeto span {
+  font-size: 1em;
+  color: white;
 }
 
 /*@ Caso utilize sliders 

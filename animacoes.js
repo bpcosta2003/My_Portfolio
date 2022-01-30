@@ -23,11 +23,11 @@ function moreAbout() {
     <h1 id='aboutTop'>My Journey!</h1>
     <p id='aboutContent'>
     In 2018 I started to be more interested in technological matters, and I wanted to learn how to develop designs. 
-    So I enrolled at SAGA, a graphic design school. 
+    So I enrolled at <a href="https://www.saga.art.br/" target="_blank">SAGA</a>, a graphic design school. 
     I learned a lot of cool stuff there.
     Therefore, I left SAGA in 2019 and I was stopped for 1 year thinking about what to do. 
-    Until 2020 I had the opportunity to learn programming, so I enrolled in a programming course at MASTERGEEKS. 
-    And so my journey as a programmer began! When I finished high school I wanted to become a technologist as a Systems Analyst at FIAP, and I am still there today.
+    Until 2020 I had the opportunity to learn programming, so I enrolled in a programming course at <a href="https://supergeeks.com.br/" target="_blank">SUPERGEEKS</a>. 
+    And so my journey as a programmer began! When I finished high school I wanted to become a technologist as a Systems Analyst at <a href="https://www.fiap.com.br/" target="_blank">FIAP</a>, and I am still there today.
     </p>
 
     <button class='moreAbout' onclick='moreAbout()'>
@@ -66,22 +66,39 @@ function explorar(designProjects) {
 
   if (designProjects == "d") {
     itens.push(
-      `<a target="_blank" href="https://www.artstation.com/artwork/g2groK"><img src="img/bruno-costa-capitao-america-poligonal-art.jpg" alt=""></a><p>Poligonal Art</p>`
+      `<a target="_blank" href="https://www.artstation.com/artwork/g2groK"><img src="img/bruno-costa-capitao-america-poligonal-art.jpg" alt=""></a><p>Poligonal Art</p><div class="techIcons">
+      <i class="devicon-illustrator-plain colored"></i>
+     
+    </div>;`
     );
     itens.push(
-      `<a target="_blank" href="https://www.artstation.com/artwork/8eWJ5w"><img src="img/bruno-costa-hulk-minimalista.jpg" alt=""></a><p>Minimalist Art</p>`
+      `<a target="_blank" href="https://www.artstation.com/artwork/8eWJ5w"><img src="img/bruno-costa-hulk-minimalista.jpg" alt=""></a><p>Minimalist Art</p><div class="techIcons">
+      
+      <i class="devicon-illustrator-plain colored"></i>
+    </div>;`
     );
     itens.push(
-      `<a target="_blank" href="https://www.artstation.com/artwork/rAE826"><img src="img/bruno-costa-type-art-urso.jpg" alt=""></a><p>Type Art</p>`
+      `<a target="_blank" href="https://www.artstation.com/artwork/rAE826"><img src="img/bruno-costa-type-art-urso.jpg" alt=""></a><p>Type Art</p><div class="techIcons">
+      <i class="devicon-photoshop-plain colored"></i>
+      
+    </div>;`
     );
     itens.push(
-      ` <a target="_blank" href="https://www.artstation.com/artwork/28lJda"><img src="img/bruno-costa-flat-cene-predios-bpc.jpg" alt=""></a><p>Flat Cene</p>`
+      ` <a target="_blank" href="https://www.artstation.com/artwork/28lJda"><img src="img/bruno-costa-flat-cene-predios-bpc.jpg" alt=""></a><p>Flat Cene</p><div class="techIcons">
+      
+      <i class="devicon-illustrator-plain colored"></i>
+    </div>;`
     );
     itens.push(
-      `<a target="_blank" href="https://www.artstation.com/artwork/lx1o6V"><img src="img/bruno-costa-dark-art-stan-lee.jpg" alt=""></a><p>Dark Art</p>`
+      `<a target="_blank" href="https://www.artstation.com/artwork/lx1o6V"><img src="img/bruno-costa-dark-art-stan-lee.jpg" alt=""></a><p>Dark Art</p><div class="techIcons">
+      <i class="devicon-photoshop-plain colored"></i>
+      
+    </div>;`
     );
     itens.push(
-      `<a target="_blank" href="https://www.artstation.com/artwork/zOJykm"><img src="img/bruno-costa-quarto-img.jpg"alt=""></a><p>3D Model</p>`
+      `<a target="_blank" href="https://www.artstation.com/artwork/zOJykm"><img src="img/bruno-costa-quarto-img.jpg"alt=""></a><p>3D Model</p><div class="techIcons">
+      <img class="mayaLogo" src="img/logo/mayaLog.jpg" />
+    </div>;`
     );
   } else if (designProjects == "p") {
     itens.push(`
@@ -96,19 +113,41 @@ function explorar(designProjects) {
     <a target="_blank" href="https://github.com/bpcosta2003/Python_Usefull_Projects/blob/master/ArquivosDeTerceiros/ArquivosDeTerceiros.py"><img src="/img/ArquivosTerceiros.png" alt=""></a><p>EXTERNAL FILES</p>`);
   } else {
     itens.push(`
-    <a target="_blank" href="https://healthtrackapp-bybrunocosta.surge.sh/"><img src="/img/HealthTrackImg1.png" alt=""></a><p>HEALTH TRACK</p>`);
+    <a target="_blank" href="https://aluracord-bybrunocosta.vercel.app/"><img src="/img/AluraCordChatReact.jpg" alt=""></a><p>ALURACORD</p><div class="techIcons">
+    <i class="devicon-react-plain colored"></i
+    ><i class="devicon-nextjs-original"></i></i
+    ><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i></div>
+    
+  `);
     itens.push(`
-    <a target="_blank" href="https://clock-bybrunocosta.surge.sh/"><img src="/img/Clock_img.png" alt=""></a><p>CLOCK APP</p>`);
+    <a target="_blank" href="https://healthtrackapp-bybrunocosta.surge.sh/"><img src="/img/HealthTrackImg1.png" alt=""></a><p>HEALTH TRACK</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i><i class="devicon-jquery-plain-wordmark"></i></div>`);
+    itens.push(`
+    <a target="_blank" href="https://clock-bybrunocosta.surge.sh/"><img src="/img/Clock_img.png" alt=""></a><p>CLOCK APP</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i></div>`);
     itens.push(` 
-    <a target="_blank" href="https://shoppinglist-bybrunocosta.surge.sh"><img src="/img/ShoppingList_Cookies.png" alt=""></a><p>SHOPPING LIST</p>`);
+    <a target="_blank" href="https://shoppinglist-bybrunocosta.surge.sh"><img src="/img/ShoppingList_Cookies.png" alt=""></a><p>SHOPPING LIST</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i></div>`);
     itens.push(`
-    <a target="_blank" href="https://battlerpg-bybrunocosta.surge.sh"><img src="/img/BattleRPG.png" alt=""></a><p>BATTLE RPG</p>`);
+    <a target="_blank" href="https://battlerpg-bybrunocosta.surge.sh"><img src="/img/BattleRPG.png" alt=""></a><p>BATTLE RPG</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i><i class="devicon-jquery-plain-wordmark"></i></div>`);
     itens.push(`
-    <a target="_blank" href="https://calculator-bybrunocosta.surge.sh"><img src="/img/calculadora_img.png" alt=""></a><p>CALCULATOR</p>`);
+    <a target="_blank" href="https://calculator-bybrunocosta.surge.sh"><img src="/img/calculadora_img.png" alt=""></a><p>CALCULATOR</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i></div>`);
     itens.push(`
-    <a target="_blank" href="https://earthlayers-bybrunocosta.surge.sh"><img src="/img/earthLayers.png" alt=""></a><p>Landing Page`);
+    <a target="_blank" href="https://earthlayers-bybrunocosta.surge.sh"><img src="/img/earthLayers.png" alt=""></a><p>Landing Page</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i></div>`);
     itens.push(`
-    <a target="_blank" href="https://apipokemon-bybrunocosta.surge.sh"><img src="/img/API_Pokemon.png" alt=""></a><p>API - POKEMON</p>
+    <a target="_blank" href="https://apipokemon-bybrunocosta.surge.sh"><img src="/img/API_Pokemon.png" alt=""></a><p>API - POKEMON</p><div class="techIcons">
+    </i><i class="devicon-javascript-plain colored"></i
+    ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i><i class="devicon-jquery-plain-wordmark"></i></div>
   `);
   }
 
