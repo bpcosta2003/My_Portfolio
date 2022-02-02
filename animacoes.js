@@ -121,6 +121,16 @@ function explorar(designProjects) {
     
   `);
     itens.push(`
+    <a target="_blank" href="https://moveit-bybrunocosta.vercel.app/"><img src="/img/MoveIt.jpg" alt=""></a><p>MOVE.IT</p><div class="techIcons">
+    <i class="devicon-react-plain colored"></i>
+    <i class="devicon-nextjs-original"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-typescript-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
+    </div>
+    
+  `);
+    itens.push(`
     <a target="_blank" href="https://healthtrackapp-bybrunocosta.surge.sh/"><img src="/img/HealthTrackImg1.png" alt=""></a><p>HEALTH TRACK</p><div class="techIcons">
     </i><i class="devicon-javascript-plain colored"></i
     ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i><i class="devicon-jquery-plain-wordmark"></i></div>`);
