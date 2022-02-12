@@ -131,6 +131,14 @@ function explorar(designProjects) {
     
   `);
     itens.push(`
+    <a target="_blank" href="https://earth-layers-app-bybrunocosta.vercel.app/"><img src="/img/earthLayersAPP.png" alt=""></a><p>Earth Layers APP</p><div class="techIcons">
+    <i class="devicon-react-plain colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
+    </div>
+    
+  `);
+    itens.push(`
     <a target="_blank" href="https://healthtrackapp-bybrunocosta.surge.sh/"><img src="/img/HealthTrackImg1.png" alt=""></a><p>HEALTH TRACK</p><div class="techIcons">
     </i><i class="devicon-javascript-plain colored"></i
     ><i class="devicon-css3-plain colored"></i><i class="devicon-html5-plain colored"></i><i class="devicon-jquery-plain-wordmark"></i></div>`);
