@@ -21,3 +21,6 @@ how to deal with them.
 ##
 
 [See my portfolio here](https://myportifolio-bybrunocosta.vercel.app/)
+
+![image](https://user-images.githubusercontent.com/69023428/153729717-1e61e8f2-2c20-49cc-be68-1edc07c73df9.png)
+
