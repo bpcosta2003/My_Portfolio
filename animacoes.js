@@ -121,6 +121,14 @@ function explorar(designProjects) {
     
   `);
     itens.push(`
+    <a target="_blank" href="https://crypto-currency-app-bybrunocosta.vercel.app/"><img src="/img/CryptoVerse.jpeg" alt=""></a><p>CRYPTOVERSE</p><div class="techIcons">
+    <i class="devicon-react-plain colored"></i>
+    <i class="devicon-redux-original"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i></div>
+    
+  `);
+    itens.push(`
     <a target="_blank" href="https://moveit-bybrunocosta.vercel.app/"><img src="/img/MoveIt.jpg" alt=""></a><p>MOVE.IT</p><div class="techIcons">
     <i class="devicon-react-plain colored"></i>
     <i class="devicon-nextjs-original"></i>
