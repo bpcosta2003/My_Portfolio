@@ -113,6 +113,13 @@ function explorar(designProjects) {
     <a target="_blank" href="https://github.com/bpcosta2003/Python_Usefull_Projects/blob/master/ArquivosDeTerceiros/ArquivosDeTerceiros.py"><img src="/img/ArquivosTerceiros.png" alt=""></a><p>EXTERNAL FILES</p>`);
   } else {
     itens.push(`
+    <a target="_blank" href="https://travel-advisor-app-bybrunocosta.vercel.app/"><img src="/img/TravelAdvisorApp.jpg" alt=""></a><p>TravelAdvisor</p><div class="techIcons">
+    <i class="devicon-react-plain colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    </div>
+    
+    `);
+    itens.push(`
     <a target="_blank" href="https://aluracord-bybrunocosta.vercel.app/"><img src="/img/AluraCordChatReact.jpg" alt=""></a><p>ALURACORD</p><div class="techIcons">
     <i class="devicon-react-plain colored"></i
     ><i class="devicon-nextjs-original"></i></i
