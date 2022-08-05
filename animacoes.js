@@ -26,8 +26,10 @@ function moreAbout() {
     So I enrolled at <a href="https://www.saga.art.br/" target="_blank">SAGA</a>, a graphic design school. 
     I learned a lot of cool stuff there.
     Therefore, I left SAGA in 2019 and I was stopped for 1 year thinking about what to do. 
-    Until 2020 I had the opportunity to learn programming, so I enrolled in a programming course at <a href="https://supergeeks.com.br/" target="_blank">SUPERGEEKS</a>. 
+    In 2020 I had the opportunity to learn programming, so I enrolled in a programming course at <a href="https://supergeeks.com.br/" target="_blank">SUPERGEEKS</a>. 
     And so my journey as a programmer began! When I finished high school I wanted to become a technologist as a Systems Analyst at <a href="https://www.fiap.com.br/" target="_blank">FIAP</a>, and I am still there today.
+    In April 2022 I started an internship at <a href="https://www.wipro.com/" target="_blank">WIPRO</a> and started working with SALESFORCE.
+    This is my career until now, to be continued ...
     </p>
 
     <button class='moreAbout' onclick='moreAbout()'>
@@ -40,8 +42,7 @@ function moreAbout() {
 
     <h1 id='aboutTop'>Hi!</h1>
     <p id='aboutContent'>
-    I'm a Front-End and Back-End developer, designer and python
-    programmer. I can consider myself a prudent person, knowing the
+    I'm a FullStack developer. I can consider myself a prudent person, knowing the
     risks before defining my actions. In areas such as logistics or
     production, for example, I can work with methodologies that allow
     me to anticipate scenarios and avoid problems, which will probably
