@@ -603,10 +603,118 @@ hr {
   color: rgb(255, 217, 0);
 }
 
+/* * Certificates */
+
+.certificates {
+  background: linear-gradient(to bottom, #121212, #000000);
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.boxCertificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 400px;
+}
+
+.cardCertificates {
+  width: 90%;
+  background: linear-gradient(to right, #191919, #12121200);
+  border: 0px solid transparent;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), inset 10px 10px 20px #38383828;
+  padding: 0rem;
+  margin: 2rem;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.cardCertificates:nth-child(even) {
+  width: 90%;
+  background: linear-gradient(to left, #191919, #12121200);
+  border: 0px solid transparent;
+  padding: 0rem;
+  margin: 2rem;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.certificateImg {
+  transition: 0.5s;
+}
+
+.cardCertificates:hover:nth-child(even) {
+  box-shadow: 2px 0px 10px rgba(0, 255, 76, 0.8),
+    inset 10px 0px 10px rgb(0, 255, 76, 0.8);
+  transition: 0.5s;
+}
+
+.cardCertificates:hover:nth-child(even) .certificateImg {
+  transform: translateX(10px);
+  transition: 0.5s;
+}
+
+.cardCertificates:hover:nth-child(odd) {
+  box-shadow: 2px 0px 10px rgba(0, 255, 76, 0.8),
+    inset -10px 0px 10px rgb(0, 255, 76, 0.8);
+  transition: 0.5s;
+}
+
+.cardCertificates:hover:nth-child(odd) .certificateImg {
+  transform: translateX(-10px);
+  transition: 0.5s;
+}
+
+.circleCertificates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.contentCertificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem;
+  transition: 0.5s;
+}
+
+.contentCertificates h5,
+p {
+  margin-bottom: 0;
+}
+
+.contentCertificates p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cardCertificates .certificateImg img {
+  width: 20rem;
+  height: 13rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: -30px 0px 50px 0px rgb(0, 0, 0, 1);
+  transition: 0.5s;
+}
+
+.cardCertificates:nth-child(even) .certificateImg img {
+  width: 20rem;
+  height: 13rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 30px 0px 50px 0px rgb(0, 0, 0, 1);
+  transition: 0.5s;
+}
+
 /* * Contact */
 
 .contact {
-  background: linear-gradient(to bottom, #121212, #000000);
+  background: linear-gradient(to bottom, #000000, #121212);
   width: 100%;
   padding: 100px 0px;
 }
@@ -626,7 +734,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 600px;
+  width: 90%;
   height: 500px;
   padding: 20px 35px;
   background: #191919;
@@ -751,7 +859,7 @@ form button:focus {
 /* * Footer Copyrights */
 
 footer {
-  background: linear-gradient(to bottom, #000000, #000000);
+  background: linear-gradient(to bottom, #121212, #121212);
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
@@ -1026,7 +1134,7 @@ footer h1 {
     justify-content: center;
   }
   form {
-    width: 300px;
+    width: 90%;
   }
 }
 
@@ -1109,7 +1217,7 @@ footer h1 {
     transition: 0.5s;
   }
   form {
-    width: 400px;
+    width: 90%;
   }
 }
 
@@ -1155,6 +1263,93 @@ footer h1 {
     justify-content: center;
   }
 }
+@media (max-width: 782px) {
+  .cardCertificates {
+    width: 70%;
+    background: linear-gradient(to right, #191919, #12121200);
+    border: 0px solid transparent;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+      inset 10px 10px 20px #38383828;
+    padding: 0rem;
+    margin: 2rem;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+
+  .cardCertificates:nth-child(even) {
+    width: 70%;
+    background: linear-gradient(to left, #191919, #12121200);
+    border: 0px solid transparent;
+    padding: 0rem;
+    margin: 2rem;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+
+  .circleCertificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .contentCertificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
+    color: white;
+    padding: 2rem;
+    transition: 0.5s;
+  }
+
+  .contentCertificates h5,
+  p {
+    margin-bottom: 0;
+  }
+
+  .cardCertificates .certificateImg img {
+    border-radius: 0px;
+    height: 25rem;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 50px 50px 0px #000000;
+  }
+
+  .cardCertificates:nth-child(even) .certificateImg img {
+    border-radius: 0px;
+    height: 25rem;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0px -50px 50px 0px #000000;
+  }
+
+  .cardCertificates:hover:nth-child(even) {
+    box-shadow: 2px 0px 10px rgba(0, 255, 76, 0.8),
+      inset 0px 0px 10px rgb(0, 255, 76, 0.8);
+  }
+
+  .cardCertificates:hover:nth-child(even) .certificateImg {
+    transform: translateY(10px);
+  }
+
+  .cardCertificates:hover:nth-child(odd) {
+    box-shadow: 2px 0px 10px rgba(0, 255, 76, 0.8),
+      inset 0px 0px 10px rgb(0, 255, 76, 0.8);
+  }
+
+  .cardCertificates:hover:nth-child(odd) .certificateImg {
+    transform: translateY(-10px);
+  }
+
+  .certificateImg {
+    padding: 0rem;
+  }
+}
 @media (min-width: 2560px) {
   .navbar-brand,
   .nav-link {
@@ -1173,6 +1368,30 @@ footer h1 {
   .card {
     width: 500px;
   }
+  .contentCertificates h5,
+  p {
+    font-size: 2rem;
+  }
+
+  .cardCertificates .certificateImg img {
+    width: 35rem;
+    height: 26rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: -30px 0px 50px 0px rgb(0, 0, 0, 1);
+    transition: 0.5s;
+  }
+
+  .cardCertificates:nth-child(even) .certificateImg img {
+    width: 35rem;
+    height: 26rem;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 30px 0px 50px 0px rgb(0, 0, 0, 1);
+    transition: 0.5s;
+  }
 }
 @media (max-width: 1650px) {
   .content img {
@@ -1180,5 +1399,36 @@ footer h1 {
   }
   .content:hover img {
     right: -370px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardCertificates {
+    width: 90%;
+  }
+
+  .cardCertificates:nth-child(even) {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .cardCertificates {
+    width: 100%;
+    border-radius: 0;
+  }
+  .cardCertificates:nth-child(even) {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .cardCertificates .certificateImg img {
+    height: 18rem;
+    border-radius: 0;
+  }
+
+  .cardCertificates:nth-child(even) .certificateImg img {
+    height: 18rem;
+    border-radius: 0;
   }
 }
