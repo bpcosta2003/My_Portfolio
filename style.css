@@ -711,6 +711,14 @@ p {
   transition: 0.5s;
 }
 
+.cardCertificates .contentCertificates {
+  text-align: left;
+}
+
+.cardCertificates:nth-child(even) .contentCertificates {
+  text-align: right;
+}
+
 /* * Contact */
 
 .contact {
@@ -1348,6 +1356,14 @@ footer h1 {
 
   .certificateImg {
     padding: 0rem;
+  }
+
+  .cardCertificates .contentCertificates {
+    text-align: center;
+  }
+
+  .cardCertificates:nth-child(even) .contentCertificates {
+    text-align: center;
   }
 }
 @media (min-width: 2560px) {
