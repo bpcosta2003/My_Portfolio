@@ -653,6 +653,7 @@ hr {
 .cardCertificates:hover:nth-child(even) .certificateImg {
   transform: translateX(10px);
   transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .cardCertificates:hover:nth-child(odd) {
@@ -664,6 +665,7 @@ hr {
 .cardCertificates:hover:nth-child(odd) .certificateImg {
   transform: translateX(-10px);
   transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .circleCertificates {
@@ -680,6 +682,19 @@ hr {
   color: white;
   padding: 2rem;
   transition: 0.5s;
+}
+
+.contentCertificates a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.664);
+  border-bottom: 1px dashed transparent;
+  transition: 0.5s all;
+}
+
+.contentCertificates a:hover {
+  border-bottom: 1px dashed;
+  transition: 0.5s all;
+  color: rgba(255, 255, 255, 0.856);
 }
 
 .contentCertificates h5,
