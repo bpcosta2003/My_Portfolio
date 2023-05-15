@@ -42,14 +42,15 @@ function moreAbout() {
 
     <h1 id='aboutTop'>Hi!</h1>
     <p id='aboutContent'>
-    I'm a FullStack developer and Technologist in Systems Analysis and Development. I can consider myself a prudent person,
-    knowing the risks before defining my actions. In areas such as
-    logistics or production, for example, I can work with
-    methodologies that allow me to anticipate scenarios and avoid
-    problems, which will probably be comfortable for me. In these
-    areas I can highlight myself by my organization characteristics,
-    process vision and cooperative profile. For me the mistake is a
-    learning, I work a lot to know how to deal with them.
+    I'm a Salesforce + FullStack developer and Technologist in Systems Analysis and Development. I can consider myself a prudent person,
+              knowing the risks before defining my actions. In areas such as
+              logistics or production, for example, I can work with
+              methodologies that allow me to anticipate scenarios and avoid
+              problems, which will probably be comfortable for me. In these
+              areas I can highlight myself by my organization characteristics,
+              process vision and cooperative profile. For me the mistake is a
+              learning, I work a lot to know how to deal with them.
+              I'm always looking for new challenges that allow me to apply my knowledge in practice, contributing to the success of an organization.
     </p>
 
     <button class='moreAbout' onclick='moreAbout()'>
