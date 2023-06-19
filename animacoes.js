@@ -115,6 +115,15 @@ function explorar(designProjects) {
     <a target="_blank" href="https://github.com/bpcosta2003/Python_Usefull_Projects/blob/master/ArquivosDeTerceiros/ArquivosDeTerceiros.py"><img src="/img/ArquivosTerceiros.png" alt=""></a><p>EXTERNAL FILES</p>`);
   } else {
     itens.push(`
+    <a target="_blank" href="https://exercisetrack-bybrunocosta.vercel.app/"><img src="/img/ExerciseTrackAPP.png" alt=""></a><p>Exercise Track</p><div class="techIcons">
+    <i class="devicon-nextjs-original"></i>
+    <i class="devicon-react-plain colored"></i>
+    <i class="devicon-typescript-plain colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    </div>
+    
+    `);
+    itens.push(`
     <a target="_blank" href="https://travel-advisor-app-bybrunocosta.vercel.app/"><img src="/img/TravelAdvisorApp.jpg" alt=""></a><p>TravelAdvisor</p><div class="techIcons">
     <i class="devicon-react-plain colored"></i>
     <i class="devicon-javascript-plain colored"></i>
