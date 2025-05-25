@@ -17,6 +17,6 @@ how to deal with them.
 
 [Chek it out!](https://myportifolio-bybrunocosta.vercel.app/)
 
-![image](https://github.com/user-attachments/assets/de38466f-8655-4c13-a41c-3daf6db98d15)
+![image](https://user-images.githubusercontent.com/69023428/153729717-1e61e8f2-2c20-49cc-be68-1edc07c73df9.png)
 
 
